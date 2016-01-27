@@ -8,9 +8,9 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
-<body>
+<body style="background: url('/Content/img/fondo-azul.gif'); background-repeat:repeat">
     <!--NavBar-->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top" style="background-color: white">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -41,12 +41,31 @@
         </div>
     </nav>
     <!--Body-->
-    <div class="container body-content">
+    <div class="container body-content" style="background-color: white">
         @RenderBody()
         <hr />
         <footer>
-            <div class="row">
-                <p class="text-right">&copy; @DateTime.Now.Year - CASTANO & Asociados - Correo electrónico: info@castanoyasociados.com.ar - Teléfono: (0341) 485-4531</p>
+            <div class="col-lg-4">
+                <h3 class="panel-title">
+                    <strong>Síguenos</strong>
+                </h3>
+                <p></p>
+                <ul class="list-unstyled">
+                    <li class="facebook"><a href="https://www.facebook.com/CASTANO-asociados-154095021324925/" data-original-title="Facebook"><img src="~/Content/img/FB-logo.png" alt="FaceBook" /></a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                &copy; Copyright @DateTime.Now.Year by CASTANO & Asociados
+            </div>
+            <div class="col-lg-4">
+                <h3 class="panel-title">
+                    <strong>Contáctanos</strong>
+                </h3>
+                <p></p>
+                <ul class="list-unstyled">
+                    <li><em class="glyphicon glyphicon-phone"></em> <strong>Phone:</strong> (+54) 0341 485-4531</li>
+                    <li><em class="glyphicon glyphicon-envelope"></em> <strong>Email:</strong> <a href="mailto:info@castanoyasociados.com.ar" class="ApplyClass">info@castanoyasociados.com.ar</a></li>
+                </ul>
             </div>
         </footer>
     </div>
