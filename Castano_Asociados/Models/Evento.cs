@@ -19,10 +19,14 @@ namespace Castano_Asociados.Models
         public int IdCliente { get; set; }
 
         [Column("FECHA_INICIO")]
-        public DateTime Fecha_Inicio { get; set; }
+        [Display(Name = "Fecha Inicio")]
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:d}")]
+        public DateTime FechaInicio { get; set; }
 
         [Column("FECHA_FIN")]
-        public DateTime Fecha_Fin { get; set; }
+        [Display(Name = "Fecha Fin")]
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:d}")]
+        public DateTime FechaFin { get; set; }
 
         public virtual Cliente Cliente { get; set; }
     }
