@@ -1,7 +1,6 @@
 ﻿body {
-    padding-top: 50px;
+    padding-top: 158px;
     padding-bottom: 20px;
-    
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -22,4 +21,29 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+#navbar{
+    background-color: white;
+}
+#fondo{
+    background: url('/Content/img/fondo-azul.gif'); 
+    background-repeat: repeat
+}
+#body{
+    background-color: white
+}
+.sinPadding{
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+}
+.parrafo{
+    margin: 0px;
+    padding: 10px 5px 20px 5px; 
+    line-height:16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkblue;
+    font-size:13px;
 }
